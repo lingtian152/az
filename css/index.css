@@ -15,3 +15,7 @@ body {
     position: absolute;
     top: 0%;
 } 
+
+.top-bar nav ul a {
+    font-size: 20px;
+}
