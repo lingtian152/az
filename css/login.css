@@ -1,9 +1,9 @@
 body {
-    background-color: rgb(50, 50, 50);
+    background: url(./img/loginbg.jpg);
     margin: 0;
     padding: 0;
 }
 
 .login {
-    background: ;
+    background: rgba(50,50,50,0.5);
 }
