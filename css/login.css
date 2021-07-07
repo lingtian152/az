@@ -8,6 +8,9 @@ body {
 
 .login {
     background: rgba(50,50,50,0.5);
+}
+
+.login nav {
     position: absolute;
     top: 50%;
     left: 50%;
