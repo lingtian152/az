@@ -1,1 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(125, 125, 125);
+}
 
+.nav {
+    background-color: #4CC5C8;
+}
