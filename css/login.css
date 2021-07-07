@@ -1,5 +1,7 @@
 body {
-    background: url(../img/loginbg.jpg);
+    background-image: url(../img/loginbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }
