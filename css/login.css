@@ -20,9 +20,12 @@ body {
 .login nav input {
     width: 100%;
     text-align: center;
-    color: white;
     background: none;
     border: none;
+}
+
+.login nav input::placeholder {
+    color: white;
 }
 
 .login nav a input {
