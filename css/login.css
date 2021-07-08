@@ -13,7 +13,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 50%;
-    width: 50%;
+    width: 20%;
 }
 
 .login nav input {
