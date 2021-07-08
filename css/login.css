@@ -9,8 +9,8 @@ body {
 .login nav {
     background: rgba(50,50,50,0.5);
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 40%;
     transform: translate(-50%, -50%);
     height: 40%;
     width: 40%;
@@ -18,12 +18,15 @@ body {
 
 .login nav input {
     width: 100%;
+    text-align: center;
+    color: white;
     background: none;
     border: none;
 }
 
 .login nav a input {
     background: none;
+    color: white;
     font-size: 20px;
     border: none;
 }
