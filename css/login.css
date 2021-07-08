@@ -1,7 +1,7 @@
 body {
     background-image: url(../img/loginbg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     margin: 0;
     padding: 0;
 }
@@ -13,10 +13,6 @@ body {
 .login nav {
     position: absolute;
     top: 50%;
-    left: 50%;
+     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.btn {
-    font-size: 20px;
 }
