@@ -14,7 +14,6 @@ body {
     transform: translate(-50%, -50%);
     height: 40%;
     width: 40%;
-    border-radius: 50%;
 }
 
 .login nav input {
