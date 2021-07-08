@@ -17,6 +17,7 @@ body {
 }
 
 .login nav input {
+    width: 100%;
     background: none;
     border: none;
 }
