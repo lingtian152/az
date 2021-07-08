@@ -10,13 +10,19 @@ body {
     background: rgba(50,50,50,0.5);
     position: absolute;
     top: 50%;
-     left: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     height: 50%;
     width: 50%;
 }
 
+.login nav input {
+    background: none;
+    border: none;
+}
+
 .login nav a input {
     background: none;
     font-size: 20px;
+    border: none;
 }
