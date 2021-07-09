@@ -28,6 +28,9 @@ body {
 }
 
 .login form a input {
+    position: absolute;
+    top: 60%;
+    left: 50%;
     background: none;
     color: white;
     border: none;
