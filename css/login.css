@@ -1,7 +1,7 @@
 body {
     background-image: url(../img/loginbg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     margin: 0;
     padding: 0;
 }
@@ -16,23 +16,67 @@ body {
     width: 320px;
 }
 
-.login form input {
+.login form h2 {
+    color: white;
+    position: absolute;
+    left: 40%;
+}
+
+.input input{
+    padding: 0;
+    overflow: none;
+    margin: 0;
     width: 100%;
+    color: white;
+    position: absolute;
     text-align: center;
     background: none;
     border: none;
+    height: 5%;
+    transition: 0.5s;
 }
 
-.login form input::placeholder {
+.input input:hover {
+    background: rgba(200, 200, 200, 0.5);
+}
+
+.input input[type="password"]{
+    font-size: 20px;
+}
+
+.input input[type="text"]{
+    font-size: 20px;
+}
+
+
+
+.input input::placeholder {
     color: white;
 }
 
-.login form a input {
+.btn{
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 25%;
     background: none;
     color: white;
     border: none;
-    border-radius: 50%;
+    width: 50%;
+    height: 10%;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #EAA32D;
+}
+
+.btn[type="submit"]{
+    font-size: 20px;
+}
+
+.register a {
+    position: absolute;
+    border: none;
+    color: white;
+    text-decoration: none;
 }
