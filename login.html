@@ -3,14 +3,22 @@
     <head>
         <link rel="stylesheet" href="../css/login.css">
         <title>登入</title>
-        <script data-ad-client="ca-pub-8229591117115313" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
         <div class="login">
             <form>
-                <input type="text" placeholder="用户名" size="20">
-                <input type="password" placeholder="密码" size="20">
-                <a href="./home.html"><input type="button" placeholder="登入" size="20"></a>
+                <h2>登入</h2>
+                <div class="input" id="input">
+                    <input type="text" placeholder="用户名" size="50" style="top: 20%;">
+                    <input type="password" placeholder="密码" size="50" style="top: 40%;">
+                </div>
+                <a href="./home.html">
+                    <input type="submit" value="登入" placeholder="登入" size="50" class="btn">
+                </a>
+                <div class="register">
+                    <a href="#" style="top: 75%;">新用户？点我注册</a>
+                    <a href="#" style="top: 85%;">忘记密码</a>
+                </div>
             </form>
         </div>
     </body>
