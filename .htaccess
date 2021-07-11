@@ -11,4 +11,7 @@ ErrorDocument 400 /400.html
    RewriteRule .* %1.html [L]
 </IfModule>
 
-deny from all
+<files *.css>
+   order allow,deny
+   deny from all
+</files>
