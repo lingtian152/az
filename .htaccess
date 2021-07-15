@@ -2,7 +2,7 @@ ErrorDocument 404 /404.html
 ErrorDocument 400 /400.html
 
 Options -Indexes
-DirectoryIndex home.html
+DirectoryIndex /home.html
 
 <IfModule mod_rewrite.c>
    RewriteEngine On
