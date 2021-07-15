@@ -12,7 +12,3 @@ DirectoryIndex /home.html
    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /html/(.*)\ HTTP/
    RewriteRule .* %1.html [L]
 </IfModule>
-
-
-Order Allow,Deny
-Deny from all
