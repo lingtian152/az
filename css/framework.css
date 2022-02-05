@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.right {
+    right: 0%;
+}
+
+.left {
+    left: 0%;
+}
+
+.img {
+    border-width: 0px;
+    border-style: none;
+    border-color: initial;
+    border-radius: 5%;
+    width: 500px !important;
+    height: auto !important;
+    visibility: visible !important;
+}
