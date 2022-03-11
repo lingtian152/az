@@ -2,9 +2,11 @@ RewriteEngine On
 
 ErrorDocument 404 \404
 
+ErrorDocument 403 \403
+
 RedirectMatch 403 /\..*$
 
-<Files "\js\|\css\">
+<Files "/js/|\css/|*/img/">
     Order Allow,Deny
     Deny from All
 </Files>
@@ -14,3 +16,4 @@ Options +MultiViews
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
