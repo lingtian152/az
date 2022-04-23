@@ -1,15 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700&display=swap');
+@font-face {
+    font-family: '站酷仓耳渔阳体-W01';
+    src: url(../fonts/站酷仓耳渔阳体-W01.ttf);
+}
 
+@font-face {
+    font-family: '站酷仓耳渔阳体-W02';
+    src: url(../fonts/站酷仓耳渔阳体-W02.ttf);
+}
+
+@font-face {
+    font-family: '站酷仓耳渔阳体-W03';
+    src: url(../fonts/站酷仓耳渔阳体-W03.ttf);
+}
+
+@font-face {
+    font-family: '站酷仓耳渔阳体-W04';
+    src: url(../fonts/站酷仓耳渔阳体-W04.ttf);
+}
+
+@font-face {
+    font-family: '站酷仓耳渔阳体-W05';
+    src: url(../fonts/站酷仓耳渔阳体-W05.ttf);
+}
+
+@font-face {
+    font-family: '创客贴金刚体';
+    src: url(../fonts/创客贴金刚体.otf);
+}
 
 * {
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-position: 0 0, center;
-    height: auto;
-    width: auto;
 }
 
 .bg-snow {
@@ -38,10 +59,6 @@ body {
     color: white !important;
 }
 
-.auto-height {
-    height: auto;
-}
-
 .z-index-100 {
     z-index: 100;
 }
@@ -63,6 +80,7 @@ body {
     height: 100%;
     width: 100%;
     filter: blur(1.5px);
+    background-repeat: repeat-y;
 }
 
 .qa {
@@ -121,30 +139,58 @@ body {
 
 .meihua_center {
     position: absolute;
-    width: 15%;
-    height: 35%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: auto;
+    width: auto;
+    height: auto;
 }
 
 .meihua_center div {
     padding: 25px 25px;
 }
 
-.meihua_center div div {
-    font-family: 'Noto Sans SC', sans-serif;
+.qq {
+    height: auto;
+    width: 15rem;
+    background: #007CFF;
+    padding: 1.653rem 1.653rem;
+    margin: 1.653rem;
 }
 
-.meihua_center div div button {
-    background: transparent;
+.wechat {
+    height: auto;
+    width: 15rem;
+    background-color: #007CFF;
+    padding: 1.653rem;
+    margin: 1.653rem;
+}
+
+.qq,
+.wechat {
+    border-radius: 0.938rem;
+    font-family: "创客贴金刚体", sans-serif;
+}
+
+.qq div,
+.wechat div {
+    font-size: 1.632rem;
+}
+
+.qq button,
+.wechat button {
     border: none;
+    background: transparent;
+    color: white;
+    width: 50%;
+    text-align: center;
+    font-size: 1.535rem;
 }
 
-.meihua_center div div button:hover {
-    background-color: rgba(200, 200, 200, 0.5);
-    color: black;
+.qq button:hover,
+.wechat button:hover {
+    color: whitesmoke;
+    background-color: rgba(111, 117, 117, 0.65);
 }
 
 .back {
@@ -158,12 +204,16 @@ body {
 
 button {
     outline: none !important;
-    text-align: center;
+    text-align: center !important;
+    font-family: '创客贴金刚体';
 }
 
-.btn {
-    outline: none !important;
+.view {
+    position: absolute;
+    bottom: 2% !important;
+    color: white !important;
 }
+
 
 .meihuabao {
     display: grid;
@@ -171,7 +221,32 @@ button {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    float: none;
+    content: '';
+
 }
+
+.anim::after,
+.bili::after,
+.snow::after,
+.shizuku::after,
+.ling::after,
+.anim::before,
+.bili::before,
+.snow::before,
+.shizuku::before,
+.ling::before {
+    content: '';
+    float: none;
+}
+
+.card-body,
+.card {
+    background-color: #007CFF !important;
+    border-radius: 0.938rem !important;
+    border: none !important;
+}
+
 
 .anim {
     grid-area: 1 / 1 / 2 / 2;
@@ -191,4 +266,139 @@ button {
 
 .ling {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+.card-title {
+    text-align: center;
+    position: absolute;
+    top: 2% !important;
+    font-family: '创客贴金刚体' !important;
+    font-weight: 600;
+    color: white;
+}
+
+.card-text {
+    font-family: '创客贴金刚体' !important;
+    font-weight: 600;
+    color: white;
+}
+
+@media only screen and (max-width: 914px) {
+
+    .meihuabao {
+        content: '';
+        float: none;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        padding: 0;
+        margin: 0;
+        height: 15.825rem;
+        width: auto;
+    }
+
+    .anim {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 12.5rem !important;
+        height: auto;
+        content: '';
+        float: right;
+    }
+
+    .bili {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 12.5rem !important;
+        height: auto;
+        content: '';
+        float: right;
+    }
+
+    .snow {
+        grid-area: 1 / 2 / 2 / 3;
+        width: 12.5rem !important;
+        height: auto;
+        content: '';
+        float: left;
+    }
+
+    .shizuku {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 12.5rem !important;
+        height: auto;
+        content: '';
+        float: left;
+    }
+
+    .ling {
+        grid-area: 3 / 1 / 4 / 2;
+        width: 12.5rem !important;
+        height: auto;
+        content: '';
+        float: right;
+    }
+
+    .card-text {
+        font-size: 0.938rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .back {
+        position: absolute;
+        top: 82%;
+        left: 10px;
+        height: 3.125rem;
+        width: 3.95rem;
+    }
+
+    .meihua_center {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 15.625rem;
+        width: 15.625rem;
+    }
+
+    .meihua_center div {
+        padding: 0;
+    }
+
+    .qq {
+        height: 8.65rem;
+        width: 10rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        padding: 3rem 3rem 3rem 3rem;
+        margin-bottom: 15rem;
+    }
+
+    .wechat {
+        height: 8.65rem;
+        width: 10rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 13rem;
+    }
+
+    .title {
+        text-align: center;
+        position: absolute;
+        left: 1.53rem;
+        top: 1.85rem;
+    }
+
+    .qq button,
+    .wechat button {
+        position: absolute;
+        bottom: 2%;
+    }
 }
