@@ -1,0 +1,33 @@
+.dropdown_meun {
+    border: none;
+    position: relative;
+    top: 10rem;
+    left: -20rem;
+    background-color: #6cabd6;
+    color: white;
+    height: 3.125rem;
+    width: 4.745rem;
+    margin: 5px 5px;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    outline: none;
+}
+
+.dropdown_meun:hover, .dropdown_meun:focus {
+    background-color: #477ea3;
+}
+
+.dropdown_meun option {
+    display: inline-block;
+    font-weight: 400;
+    height: auto;
+    padding: 15px 15px;
+}
+
+@media only screen and (max-width: 914px) { 
+    .dropdown_meun {
+        position: relative;
+        top: 100px;
+        left: -50px;
+    }
+}

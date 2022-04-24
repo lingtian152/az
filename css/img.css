@@ -1,6 +1,6 @@
 .img-lib ul {
     display: grid;
-    grid-template-columns: repeat(3,0.5fr);
+    grid-template-columns: repeat(3, 0.5fr);
     grid-template-rows: 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
@@ -41,8 +41,8 @@
         -webkit-align-items: center;
         -ms-flex-align: center;
         align-items: center;
-        }
-    
+    }
+
     .chat:nth-child(1) {
         -webkit-order: 0;
         -ms-flex-order: 0;
@@ -53,8 +53,8 @@
         -webkit-align-self: auto;
         -ms-flex-item-align: auto;
         align-self: auto;
-        }
-    
+    }
+
     .login:nth-child(2) {
         -webkit-order: 0;
         -ms-flex-order: 0;
@@ -65,8 +65,8 @@
         -webkit-align-self: auto;
         -ms-flex-item-align: auto;
         align-self: auto;
-        }
-    
+    }
+
     .load:nth-child(3) {
         -webkit-order: 0;
         -ms-flex-order: 0;
@@ -77,34 +77,48 @@
         -webkit-align-self: auto;
         -ms-flex-item-align: auto;
         align-self: auto;
-        }
-    
-    .chat, .login, .load {
+    }
+
+    .chat,
+    .login,
+    .load {
         position: relative;
-        width: 160px;
-        height: 250px;
-        padding: 2px;
+        width: 10rem;
+        height: 15.625rem;
+        padding: 0.125rem;
         border-radius: 1.653rem;
     }
 
     .chat {
-        top: 90px;
+        top: 4rem;
     }
 
     .login {
-        top: -160px;
-        left: -100px;
+        top: -12rem;
+        left: -6.25rem;
     }
 
     .load {
-        top: 350px;
-        left: 50px;
+        top: 20rem;
+        left: 3.125rem;
+    }
+
+    .download {
+        position: relative;
+        top: -20px;
+        left: 5px;
+        height: 150px;
+        width: auto;
     }
 
     .download-btn {
         position: relative;
-        top: 70px;
-        padding: 15px;
-        margin: 10px;
+        top: 4.375rem;
+        padding: 0.938rem;
+        margin: 0.625rem;
+        border: none;
+        background-color: #3872FD;
+        color: white;
+        border-radius: 0.938rem;
     }
 }

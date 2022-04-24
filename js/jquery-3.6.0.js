@@ -1267,7 +1267,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			if ( typeof context.getElementsByTagName !== "undefined" ) {
 				return context.getElementsByTagName( tag );
 
-			// DocumentFragment nodes don't have gEBTN
+			// DocumentFragment nodes don't have gEripple-btn
 			} else if ( support.qsa ) {
 				return context.querySelectorAll( tag );
 			}
@@ -1278,7 +1278,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 				tmp = [],
 				i = 0,
 
-				// By happy coincidence, a (broken) gEBTN appears on DocumentFragment nodes too
+				// By happy coincidence, a (broken) gEripple-btn appears on DocumentFragment nodes too
 				results = context.getElementsByTagName( tag );
 
 			// Filter out possible comments

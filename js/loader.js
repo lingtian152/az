@@ -25,7 +25,7 @@ function Imagess(url, callback, error) {
     img.onerror = error;
   } else {
     img.onerror = function () {
-      img.src = "../icon/failed.png";
+      img.src = "../img/loading.gif";
     };
   }
   img.src = val;
@@ -50,7 +50,7 @@ function img_loading() {
       continue;
     }
     tt.loading = true;
-    tt.src = "../icon/loading.gif";
+    tt.src = "../img/loading.gif";
     Imagess(tt.getAttribute("src-data"), function (obj) {
       tt.src = obj.src;
       tt.removeAttribute("src-data");
