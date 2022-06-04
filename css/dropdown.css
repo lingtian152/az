@@ -6,7 +6,7 @@
     background-color: #6cabd6;
     color: white;
     height: 3.125rem;
-    width: 4.745rem;
+    width: 5.555rem;
     margin: 5px 5px;
     border-radius: 0.25em;
     padding: 0.25em 0.5em;
@@ -27,7 +27,7 @@
 @media only screen and (max-width: 914px) { 
     .dropdown_meun {
         position: relative;
-        top: 100px;
-        left: -50px;
+        top: 2.5px;
+        left: 0px;
     }
 }

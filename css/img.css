@@ -90,35 +90,51 @@
     }
 
     .chat {
-        top: 4rem;
+        top: 1.5rem;
     }
 
     .login {
-        top: -12rem;
+        top: -14.5rem;
         left: -6.25rem;
     }
 
     .load {
-        top: 20rem;
+        top: 17rem;
         left: 3.125rem;
     }
 
     .download {
         position: relative;
-        top: -20px;
+        top: -75px;
         left: 5px;
         height: 150px;
         width: auto;
+        padding: 5px;
     }
 
     .download-btn {
         position: relative;
-        top: 4.375rem;
+        top: 4.5rem;
         padding: 0.938rem;
         margin: 0.625rem;
         border: none;
         background-color: #3872FD;
         color: white;
         border-radius: 0.938rem;
+    }
+
+    .return {
+        display: inline-block;
+        position: relative;
+        top: 610px;
+        left: -150px;
+        padding: 5px;
+        height: 45px;
+        width: 70px;
+        background-color: #3872FD;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        margin: 5px;
     }
 }

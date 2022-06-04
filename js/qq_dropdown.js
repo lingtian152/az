@@ -58,6 +58,11 @@ $(document).ready(function () {
             get_855("none");
             get_8820("none");
             get_8850("flex");
+        } else if (sv == "8817") {
+            get_850("none");
+            get_855("none");
+            get_8820("none");
+            get_8850("none");
         }
     })
 })

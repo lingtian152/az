@@ -1,0 +1,32 @@
+.announcement {
+    z-index: 200;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 30%;
+    background-color: #A5BECC;
+}
+
+.announcement-head {
+    font-size: 2.813rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+.announcement-body {
+    font-weight: 700;
+    font-size: 2.813rem;
+}
+
+
+.announcement-footer button {
+    background: rgb(200,200,200);
+    border: none;
+    position: absolute;
+    bottom: 0%;
+    font-size: 25px;
+    width: 100%;
+}

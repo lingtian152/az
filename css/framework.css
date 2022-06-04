@@ -36,6 +36,8 @@
 body {
     display: grid;
     place-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .navbar-brand {
@@ -313,10 +315,33 @@ button {
 
 @media only screen and (max-width: 914px) {
 
+    .top {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .top img {
+        height: 100%;
+        width: 100%;
+        z-index: -100;
+        filter: opacity(0.75);
+    }
+
+    .top_title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(200,200,200,0.15);
+        color: white;
+        font-size: 39.5px;
+        text-rendering: auto;
+    }
 
     .meihuabao {
-        content: '';
-        float: none;
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
@@ -326,58 +351,74 @@ button {
         margin: 0;
         height: 15.825rem;
         width: auto;
+        position: relative;
+        top: 25px;
     }
+
 
     .anim {
         grid-area: 1 / 1 / 2 / 2;
-        width: 12.5rem !important;
+        width: 11rem;
         height: auto;
         content: '';
         float: right;
         transition: 0.25s;
         position: fixed;
+        padding: 10px;
+        margin: 5px;
+        align-items: center;
     }
 
     .bili {
         grid-area: 2 / 1 / 3 / 2;
-        width: 12.5rem !important;
+        width: 11rem;
         height: auto;
         content: '';
         float: right;
         transition: 0.25s;
         position: fixed;
+        padding: 10px;
+        margin: 5px;
+        align-items: center;
     }
 
     .snow {
         grid-area: 1 / 2 / 2 / 3;
-        width: 12.5rem !important;
+        width: 11rem;
         height: auto;
         content: '';
         float: left;
         transition: 0.25s;
         position: fixed;
+        padding: 10px;
+        margin: 5px;
+        align-items: center;
     }
 
     .shizuku {
         grid-area: 2 / 2 / 3 / 3;
-        width: 12.5rem !important;
+        width: 11rem;        
         height: auto;
         content: '';
         float: left;
         transition: 0.25s;
         position: fixed;
-
+        padding: 10px;
+        margin: 5px;
+        align-items: center;
     }
 
     .ling {
         grid-area: 3 / 1 / 4 / 2;
-        width: 12.5rem !important;
+        width: 11rem;
         height: auto;
         content: '';
         float: right;
         transition: 0.25s;
         position: fixed;
-
+        padding: 10px;
+        margin: 5px;
+        align-items: center;
     }
 
     .card-text {
@@ -389,11 +430,11 @@ button {
     }
 
     .back {
-        position: absolute;
-        top: 82%;
-        left: 10px;
+        position: relative;
+        top: 210px;
+        left: -150px;
         height: 3.125rem;
-        width: 3.95rem;
+        width: 4.5rem;
     }
 
     .meihua_center {
@@ -448,5 +489,9 @@ button {
         top: 12.5rem;
         height: 12.5rem;
         width: auto;
+    }
+
+    .footer {
+        height: auto;
     }
 }
