@@ -40,6 +40,10 @@ body {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .navbar-brand {
     font-family: '创客贴金刚体' !important;
 }
